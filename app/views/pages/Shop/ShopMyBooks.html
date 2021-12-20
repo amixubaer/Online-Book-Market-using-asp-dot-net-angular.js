@@ -1,0 +1,40 @@
+<div ng-include="'views/inc/shop_nav.html'"></div>
+
+<div class="content">
+
+  <h1>My Book Lists</h1>
+
+  <a style="float: left;" class="btn btn-success" href="#!Shop/AddBook">Add Book</a>
+ 
+  <div class="input-group">
+    <input type="search" class="form-control rounded" placeholder="Search" ng-model = "search" aria-label="Search"
+    aria-describedby="search-addon" />
+  </div>
+  
+    <table border="1" id="table">
+      <tr>
+        <th>Id</th>
+        <th>Book Title</th>
+        <th>Author</th>
+        <th>Publisher</th>
+        <th>Edition</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Action</th>
+      </tr>
+
+      <tr ng-repeat="p in MyBooks | filter:search">
+          <td>{{p.Id}}</td>
+          <td>{{p.Title}}</td>
+          <td>{{p.Author}}</td>
+          <td>{{p.Publisher}}</td>
+          <td>{{p.Edition}}</td>
+          <td>{{p.Price}}</td>
+          <td>{{p.Quantity}}</td> 
+          <td>
+            <a style="color:white" class="btn btn-primary" href="#!/Shop/MyBooks/BookEdit/{{p.Id}}"> Edit</a> 
+            <a style="color:white" class="btn btn-danger" href="#!/Shop/MyBooks/BookDelete/{{p.Id}}"> Delete</a>
+        </td>
+      </tr>
+    </table>
+</div>

@@ -1,0 +1,40 @@
+<div ng-include="'views/inc/employee_nav.html'"></div>
+
+<style>
+  input.ng-invalid.ng-dirty { background-color: lightpink; }
+  input.ng-valid { background-color: lightgreen; }
+  span.error { color: red; font-weight: bold; }
+</style>
+
+<div class="content">
+
+  <h1>Request New Salary</h1>
+
+    <div class="registration-form" ng-submit = "submit()">
+
+      <form name="employeeForm" novalidate>
+
+        <div class="form-group">
+          <input type="text" class="form-control item" ng-model = "EmployeeUsername" placeholder="Employee Name" required>
+          <span class="error" ng-show="employeeForm.EmployeeUsername.$dirty && employeeForm.EmployeeUsername.$error.required">This is a required field</span>
+        </div>
+
+        <div class="form-group">
+          <input type="number" class="form-control item" ng-model = "Sal" placeholder="Salary" required>
+          <span class="error" ng-show="employeeForm.Sal.$dirty && employeeForm.Sal.$error.required">This is a required field</span>
+        </div>
+
+        <div class="form-group">
+          <input type="number" class="form-control item" ng-model = "Bonus" placeholder="Bonus" required>
+          <span class="error" ng-show="employeeForm.Bonus.$dirty && employeeForm.Bonus.$error.required">This is a required field</span>
+        </div>
+          
+        <div class="form-group">
+          <input class="btn btn-block create-account" type="submit" ng-disabled="employeeForm.$invalid">
+        </div>
+      
+    </form>
+    
+  </div>
+
+</div>

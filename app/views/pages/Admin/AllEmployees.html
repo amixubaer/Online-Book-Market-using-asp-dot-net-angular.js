@@ -1,0 +1,42 @@
+<div ng-include="'views/inc/Admin_nav.html'"></div>
+
+<div class="content">
+
+    <h1>All Employees</h1>
+
+    <a class="btn btn-primary" href="#!Admin/AddEmployee">Add Employee</a>
+
+    <div class="input-group">
+      <input type="search" class="form-control rounded" placeholder="Search" ng-model = "search" aria-label="Search"
+      aria-describedby="search-addon" />
+    </div>
+
+      <table border="1" id="table">
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Gender</th>
+            <th>Dob</th>
+            <th>NID</th>
+            <th>Email</th>
+            <th>Username</th>
+            <th>Action</th>
+        </tr>
+        <tr ng-repeat="e in AllEmployees">
+                <td>{{e.Id}}</td>
+                <td>{{e.FirstName}}</td>
+                <td>{{e.LastName}}</td>
+                <td>{{e.Gender}}</td>
+                <td>{{e.Dob}}</td>
+                <td>{{e.Nid}}</td>
+                <td>{{e.Email}}</td>
+                <td>{{e.Username}}</td>
+                <td>
+                    <a class="btn btn-success" href="#!/Admin/UpdateEmployee/{{e.Username}}">Edit</a> |
+                    <a class="btn btn-danger" href="#!/Admin/DeleteEmployee/{{e.Username}}">Delete</a>
+                </td>
+        </tr>
+      </table>
+  </div>
+  

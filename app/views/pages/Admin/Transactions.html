@@ -1,0 +1,36 @@
+<div ng-include="'views/inc/Admin_nav.html'"></div>
+
+<div class="content">
+
+  <div class="tbltrans">
+
+    <h1>Transaction History</h1>
+
+    <div class="PDFDownload">
+      <input type="button" class="btn btn-success" value="Download" ng-click="Export()" />
+    </div>
+
+    <div class="input-group">
+      <input type="search" class="form-control rounded" placeholder="Search" ng-model = "search" aria-label="Search"
+      aria-describedby="search-addon" />
+    </div>
+
+      <table border="1" id="table">
+        <tr>
+          <th>Id</th>
+          <th>Shop Name</th>
+          <th>Customer Name</th>
+          <th>Amount</th>
+          <th>Date</th>
+        </tr>
+        <tr ng-repeat="t in AllTransactions | filter:search">
+            <td>{{t.Id}}</td>
+            <td>{{t.ShopName}}</td>
+            <td>{{t.CustomerName}}</td>
+            <td>{{t.Amount}}</td>
+            <td>{{t.Date}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  

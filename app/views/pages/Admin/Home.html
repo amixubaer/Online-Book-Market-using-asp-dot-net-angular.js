@@ -1,0 +1,35 @@
+<div ng-include="'views/inc/Admin_nav.html'"></div>
+
+    <h1>KetabKhana</h1>
+
+    <div class="content">
+
+    <div class="input-group">
+      <input type="search" class="form-control rounded" placeholder="Search" ng-model = "search" aria-label="Search"
+      aria-describedby="search-addon" />
+    </div>
+
+      <table border="1" id="table">
+        <tr>
+          <th>Id</th>
+          <th>Book Title</th>
+          <th>Author</th>
+          <th>Publisher</th>
+          <th>Edition</th>
+          <th>Price</th>
+          <th>Shop Name</th>
+          <th>Quantity</th>
+        </tr>
+        <tr ng-repeat="b in AllBooks | filter:search">
+            <td>{{b.Id}}</td>
+            <td>{{b.Title}}</td>
+            <td>{{b.Author}}</td>
+            <td>{{b.Publisher}}</td>
+            <td>{{b.Edition}}</td>
+            <td>{{b.Price}}</td>
+            <td>{{b.ShopName}}</td>
+            <td>{{b.Quantity}}</td>
+        </tr>
+      </table>
+  </div>
+  

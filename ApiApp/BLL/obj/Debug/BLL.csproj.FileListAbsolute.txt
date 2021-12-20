@@ -1,0 +1,50 @@
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BLL\bin\Debug\BLL.dll
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BLL\bin\Debug\BLL.pdb
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BLL\bin\Debug\AutoMapper.dll
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BLL\bin\Debug\BEL.dll
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BLL\bin\Debug\DAL.dll
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BLL\bin\Debug\EntityFramework.dll
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BLL\bin\Debug\BEL.pdb
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BLL\bin\Debug\DAL.pdb
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BLL\bin\Debug\DAL.dll.config
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BLL\bin\Debug\AutoMapper.xml
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BLL\bin\Debug\EntityFramework.xml
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BLL\obj\Debug\BLL.dll
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BLL\obj\Debug\BLL.pdb
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BLL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BLL\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BLL\bin\Debug\System.Web.Cors.dll
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BLL\bin\Debug\System.Web.Http.Cors.dll
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BLL\bin\Debug\System.Web.Http.dll
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BLL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BLL\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BLL\bin\Debug\System.Web.Http.xml
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BLL\bin\Debug\System.Web.Http.Cors.xml
+F:\10th Semester\Final\Advanced Dot Net\Final\ApiApp\BLL\bin\Debug\BLL.dll
+F:\10th Semester\Final\Advanced Dot Net\Final\ApiApp\BLL\bin\Debug\BLL.pdb
+F:\10th Semester\Final\Advanced Dot Net\Final\ApiApp\BLL\bin\Debug\AutoMapper.dll
+F:\10th Semester\Final\Advanced Dot Net\Final\ApiApp\BLL\bin\Debug\BEL.dll
+F:\10th Semester\Final\Advanced Dot Net\Final\ApiApp\BLL\bin\Debug\DAL.dll
+F:\10th Semester\Final\Advanced Dot Net\Final\ApiApp\BLL\bin\Debug\Newtonsoft.Json.dll
+F:\10th Semester\Final\Advanced Dot Net\Final\ApiApp\BLL\bin\Debug\System.Net.Http.Formatting.dll
+F:\10th Semester\Final\Advanced Dot Net\Final\ApiApp\BLL\bin\Debug\System.Web.Cors.dll
+F:\10th Semester\Final\Advanced Dot Net\Final\ApiApp\BLL\bin\Debug\System.Web.Http.Cors.dll
+F:\10th Semester\Final\Advanced Dot Net\Final\ApiApp\BLL\bin\Debug\System.Web.Http.dll
+F:\10th Semester\Final\Advanced Dot Net\Final\ApiApp\BLL\bin\Debug\EntityFramework.dll
+F:\10th Semester\Final\Advanced Dot Net\Final\ApiApp\BLL\bin\Debug\BEL.pdb
+F:\10th Semester\Final\Advanced Dot Net\Final\ApiApp\BLL\bin\Debug\DAL.pdb
+F:\10th Semester\Final\Advanced Dot Net\Final\ApiApp\BLL\bin\Debug\DAL.dll.config
+F:\10th Semester\Final\Advanced Dot Net\Final\ApiApp\BLL\bin\Debug\AutoMapper.xml
+F:\10th Semester\Final\Advanced Dot Net\Final\ApiApp\BLL\bin\Debug\Newtonsoft.Json.xml
+F:\10th Semester\Final\Advanced Dot Net\Final\ApiApp\BLL\bin\Debug\System.Net.Http.Formatting.xml
+F:\10th Semester\Final\Advanced Dot Net\Final\ApiApp\BLL\bin\Debug\System.Web.Http.xml
+F:\10th Semester\Final\Advanced Dot Net\Final\ApiApp\BLL\bin\Debug\System.Web.Http.Cors.xml
+F:\10th Semester\Final\Advanced Dot Net\Final\ApiApp\BLL\bin\Debug\EntityFramework.xml
+F:\10th Semester\Final\Advanced Dot Net\Final\ApiApp\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+F:\10th Semester\Final\Advanced Dot Net\Final\ApiApp\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+F:\10th Semester\Final\Advanced Dot Net\Final\ApiApp\BLL\obj\Debug\BLL.csproj.CopyComplete
+F:\10th Semester\Final\Advanced Dot Net\Final\ApiApp\BLL\obj\Debug\BLL.dll
+F:\10th Semester\Final\Advanced Dot Net\Final\ApiApp\BLL\obj\Debug\BLL.pdb

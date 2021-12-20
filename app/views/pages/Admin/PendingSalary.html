@@ -1,0 +1,32 @@
+<div ng-include="'views/inc/Admin_nav.html'"></div>
+
+<div class="content">
+
+    <h1>Pending Salary</h1>
+
+    <div class="input-group">
+      <input type="search" class="form-control rounded" placeholder="Search" ng-model = "search" aria-label="Search"
+      aria-describedby="search-addon" />
+    </div>
+
+      <table border="1" id="table">
+        <tr>
+          <th>Id</th>
+          <th>Employee Username</th>
+          <th>Salary</th>
+          <th>Bonus</th>
+          <th>Action</th>
+        </tr>
+        <tr ng-repeat="s in PendingSalary | filter:search">
+            <td>{{s.Id}}</td>
+            <td>{{s.EmployeeUsername}}</td>
+            <td>{{s.Salary1}}</td>
+            <td>{{s.Bonus}}</td>
+            <td>
+              <a class="btn btn-success" href="#!Admin/ApproveSalary/{{s.Id}}">Approve</a> |
+              <a class="btn btn-danger" href="#!Admin/DeclineSalary/{{s.Id}}">Decline</a>
+          </td>
+        </tr>
+      </table>
+  </div>
+  

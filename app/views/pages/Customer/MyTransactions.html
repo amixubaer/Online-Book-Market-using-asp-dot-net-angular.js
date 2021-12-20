@@ -1,0 +1,29 @@
+<div ng-include="'views/inc/customer_nav.html'"></div>
+
+<div class="content">
+    
+  <div class="transactions">
+  
+  <h1>Transactions Report</h1>
+
+    <div class="PDFDownload">
+     <input type="button" class="btn btn-success" value="Download" ng-click="Export()" />
+    </div>
+  <br>
+    <table border="1" id="table">
+      <tr>
+        <th>Id</th>
+        <th>Shop Name</th>
+        <th>Amount</th>
+        <th>Date</th>
+      </tr>
+      
+      <tr ng-repeat="p in MyTransactions">
+          <td>{{p.Id}}</td>
+          <td>{{p.ShopName}}</td>
+          <td>{{p.Amount}}</td>
+          <td>{{p.Date}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

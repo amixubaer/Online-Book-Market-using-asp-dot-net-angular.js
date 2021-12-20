@@ -1,0 +1,44 @@
+<div ng-include="'views/inc/employee_nav.html'"></div>
+<div class="content">
+ 
+    
+  <a class="btn btn-primary" href="#!Employee/AddSalary">Request New Salary</a>
+
+  <br><br>
+
+  <div class="PDFDownload">
+    <input type="button" class="btn btn-success" value="Download" ng-click="Export()" />
+  </div>
+
+  <div class="tblCustomers">
+
+    <h1>Approved Salary</h1>
+    
+    
+
+    <div class="input-group">
+      <input type="search" class="form-control rounded" placeholder="Search" ng-model = "search" aria-label="Search"
+      aria-describedby="search-addon" />
+    </div>
+
+
+    <table border="1" id="table">
+      <tr>
+        <th>Id</th>
+        <th>Employee Name</th>
+        <th>Salary</th>
+        <th>Bonus</th>
+      </tr>
+      <tr ng-repeat="s in AllSalary | filter:search">
+          <td>{{s.Id}}</td>
+          <td>{{s.EmployeeUsername}}</td>
+          <td>{{s.Salary1}}</td>
+          <td>{{s.Bonus}}</td>
+      </tr>
+
+    </table>
+
+  </div>
+
+ </div>
+  

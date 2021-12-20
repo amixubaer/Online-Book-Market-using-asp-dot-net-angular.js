@@ -1,0 +1,63 @@
+<div ng-include="'views/inc/general_nav.html'"></div>
+
+<style>
+    input.ng-invalid.ng-dirty { background-color: lightpink; }
+    input.ng-valid { background-color: lightgreen; }
+    span.error { color: red; font-weight: bold; }
+</style>
+
+  <div class="main">
+    <div class="containers">
+        <div class="signup-content">
+            <div class="signup-img">
+                <img src="/content/shopreg.jpg" alt="">
+            </div>
+
+            <div class="signup-form" ng-submit = "submit()">
+                <form  class="register-form" id="register-form" name="regForm" novalidate >
+                
+                    <h2>Shop Registration form</h2>
+                    <div class="form-row">
+                        <br>
+                   </div>
+                        <div class="form-group">
+                            <input type="text" ng-model = "Name" placeholder="Name" required >
+                            <span class="error" ng-show="regForm.Name.$dirty && regForm.Name.$error.required && "></span>
+                        </div>
+
+                     <div class="form-group">
+                        <input type="text" ng-model = "Address" placeholder="Address"  required>
+                        <span class="error" ng-show="regForm.Address.$dirty && regForm.Address.$error.required && "></span>
+                    </div>
+                    
+                     <div class="form-group">
+                        <input type="text" ng-model = "Bin" placeholder="Bin" required>
+                        <span class="error" ng-show="regForm.Bin.$dirty && regForm.Bin.$error.required && "></span>
+                    </div>
+                    
+
+                    <div class="form-group">
+                        <input type="email" ng-model = "Email" placeholder="Email" required>
+                        <span class="error" ng-show="regForm.Email.$dirty && regForm.Email.$error.required"></span>
+                        <span class="error" ng-show="regForm.Email.$dirty && regForm.Email.$error.Email"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" ng-model = "Username" placeholder="Username" required>
+                        <span class="error" ng-show="regForm.Username.$dirty && regForm.Username.$error.required && "></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" ng-model = "Password" placeholder="Password" required>
+                        <span class="error" ng-show="regForm.Password.$dirty && regForm.Password.$error.required && "></span>
+                    </div>
+
+                    <div class="form-submit">
+                        <input type="submit" value="Submit" class="submit" name="submit" id="submit" ng-disabled="regForm.$invalid" />
+                    </div>
+                </form>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>

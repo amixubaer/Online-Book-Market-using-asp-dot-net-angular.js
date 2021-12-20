@@ -1,0 +1,60 @@
+<div ng-include="'views/inc/shop_nav.html'"></div>
+<div class="content">
+
+  <h1>Profile</h1>
+
+  <style>
+    input.ng-invalid.ng-dirty { background-color: lightpink; }
+    input.ng-valid { background-color: lightgreen; }
+    span.error { color: red; font-weight: bold; }
+  </style>
+
+  <div class="registration-form" ng-submit = "submit()">
+
+    <form name="profileForm" novalidate>
+
+      <div class="form-icon">
+        <span><i class="icon icon-user"></i></span>
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control item" placeholder="Name" ng-model = "Name" required>
+        <span class="error" ng-show="profileForm.Name.$dirty && profileForm.Name.$error.required && "></span>
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control item" placeholder="Address" ng-model = "Address" required>
+        <span class="error" ng-show="profileForm.Address.$dirty && profileForm.Address.$error.required && "></span>
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control item" placeholder="Bin" ng-model = "Bin" required>
+        <span class="error" ng-show="profileForm.Bin.$dirty && profileForm.Bin.$error.required && "></span>
+      </div>
+
+      <div class="form-group">
+        <input type="email" class="form-control item"  placeholder="Email" ng-model = "Email" required>
+        <span class="error" ng-show="profileForm.Email.$dirty && profileForm.Email.$error.required"></span>
+        <span class="error" ng-show="profileForm.Email.$dirty && profileForm.Email.$error.Email"></span>
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control item"  placeholder="Username" ng-model = "Username" disabled>
+        
+      </div>
+
+      <div class="form-group">
+        <input type="password" class="form-control item"  placeholder="Password" ng-model = "Password" required>
+        <span class="error" ng-show="profileForm.Password.$dirty && profileForm.Password.$error.required && "></span>
+      </div>
+
+      <div class="form-group">
+        <input class="btn btn-block create-account" type="submit" value="Edit" ng-disabled="profileForm.$invalid"> 
+      </div>
+
+      <div class="form-group">
+        <a class="btn btn-block create-account" style="background-color: rgb(221, 57, 57);" href="#!Shop/DeleteProfile">Delete Profile</a>
+      </div>
+
+  </form>
+</div>

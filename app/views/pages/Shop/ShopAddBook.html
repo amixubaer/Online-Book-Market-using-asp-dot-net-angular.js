@@ -1,0 +1,52 @@
+<div ng-include="'views/inc/shop_nav.html'"></div>
+<div class="content">
+
+  <h1>Add Book</h1>
+
+  <style>
+    input.ng-invalid.ng-dirty { background-color: lightpink; }
+    input.ng-valid { background-color: lightgreen; }
+    span.error { color: red; font-weight: bold; }
+  </style>
+
+
+  <div class="registration-form" ng-submit = "submit()">
+    <form name="addbookForm" novalidate>
+
+      <div class="form-group">
+        <input type="text" class="form-control item" ng-model = "Title" placeholder="Title" required>
+        <span class="error" ng-show="addbookForm.Title.$dirty && addbookForm.Title.$error.required && "></span>
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control item" ng-model = "Author" placeholder="Author" required>
+        <span class="error" ng-show="addbookForm.Author.$dirty && addbookForm.Author.$error.required && "></span>
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control item" ng-model = "Publisher" placeholder="Publisher" required>
+        <span class="error" ng-show="addbookForm.Publisher.$dirty && addbookForm.Publisher.$error.required && "></span>
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control item" ng-model = "Edition" placeholder="Edition" required>
+        <span class="error" ng-show="addbookForm.Edition.$dirty && addbookForm.Edition.$error.required && "></span>
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control item" ng-model = "Price" placeholder="Price" required>
+        <span class="error" ng-show="addbookForm.Price.$dirty && addbookForm.Price.$error.required && "></span>
+      </div>
+      
+      <div class="form-group">
+        <input type="text" class="form-control item"  ng-model = "Quantity" placeholder="Quantity" required>
+        <span class="error" ng-show="addbookForm.Quantity.$dirty && addbookForm.Quantity.$error.required && "></span>
+      </div>
+      
+
+      <div class="form-group">
+        <input class="btn btn-block create-account" type="submit" value="Add" ng-disabled="addbookForm.$invalid"> 
+      </div>
+
+  </form>
+</div>

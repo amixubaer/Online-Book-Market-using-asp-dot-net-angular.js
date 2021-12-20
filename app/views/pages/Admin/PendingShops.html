@@ -1,0 +1,36 @@
+<div ng-include="'views/inc/Admin_nav.html'"></div>
+
+<div class="content">
+
+    <h1>Pending Shops</h1>
+
+    <div class="input-group">
+      <input type="search" class="form-control rounded" placeholder="Search" ng-model = "search" aria-label="Search"
+      aria-describedby="search-addon" />
+    </div>
+
+      <table border="1" id="table">
+        <tr>
+          <th>Id</th>
+          <th>Shop Name</th>
+          <th>Address</th>
+          <th>Bin</th>
+          <th>Email</th>
+          <th>UserName</th>
+          <th>Action</th>
+        </tr>
+        <tr ng-repeat="s in PendingShops | filter:search">
+            <td>{{s.Id}}</td>
+            <td>{{s.Name}}</td>
+            <td>{{s.Address}}</td>
+            <td>{{s.Bin}}</td>
+            <td>{{s.Email}}</td>
+            <td>{{s.Username}}</td>
+            <td>
+                <a class="btn btn-success" href="#!Admin/ApproveShops/{{s.Username}}">Approve</a> |
+                <a class="btn btn-danger" href="#!Admin/DeclineShops/{{s.Username}}">Decline</a>
+            </td>
+        </tr>
+      </table>
+  </div>
+  

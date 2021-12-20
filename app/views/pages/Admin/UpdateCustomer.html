@@ -1,0 +1,67 @@
+<div ng-include="'views/inc/Admin_nav.html'"></div>
+
+<style>
+    input.ng-invalid.ng-dirty { background-color: lightpink; }
+    input.ng-valid { background-color: lightgreen; }
+    span.error { color: red; font-weight: bold; }
+</style>
+
+<div class="content">
+
+  <h1>Update Customer</h1>
+
+  <div class="registration-form" ng-submit = "submit()">
+
+    <form name="cusForm" novalidate>
+
+        <div class="form-icon">
+            <span><i class="icon icon-user"></i></span>
+        </div>
+        
+        <div class="form-group">
+            <input type="text" class="form-control item" ng-model = "FirstName" placeholder="First Name" required>
+            <span class="error" ng-show="cusForm.FirstName.$dirty && cusForm.FirstName.$error.required">This is a required field</span>
+        </div>
+    
+        <div class="form-group">
+            <input type="text" class="form-control item" ng-model = "LastName" placeholder="Last Name" required>
+            <span class="error" ng-show="cusForm.LastName.$dirty && cusForm.LastName.$error.required">This is a required field</span>
+        </div>
+    
+        <div class="form-group">
+            <input type="text" class="form-control item" ng-model = "Gender" placeholder="Gender" required>
+            <span class="error" ng-show="cusForm.Gender.$dirty && cusForm.Gender.$error.required">This is a required field</span>
+        </div>
+    
+        <div class="form-group">
+            <input type="date" class="form-control item" ng-model = "Dob" required>
+            <span class="error" ng-show="cusForm.Dob.$dirty && cusForm.Dob.$error.required">This is a required field</span>
+        </div>
+    
+        <div class="form-group">
+          <input type="text" class="form-control item" ng-model = "Nid" placeholder="NID" required>
+          <span class="error" ng-show="cusForm.Nid.$dirty && cusForm.Nid.$error.required">This is a required field</span>
+        </div>
+    
+        <div class="form-group">
+            <input type="email" class="form-control item" ng-model = "Email" placeholder="Email" required>
+            <span class="error" ng-show="cusForm.Email.$dirty && cusForm.Email.$error.required">This is a required field</span>
+            <span class="error" ng-show="cusForm.Email.$dirty && cusForm.Email.$error.Email">Email is invalid</span>
+        </div>
+    
+        <div class="form-group">
+            <input type="text" class="form-control item" ng-model = "Username" placeholder="Username" disabled required>
+            <span class="error" ng-show="cusForm.Username.$dirty && cusForm.Username.$error.required">This is a required field</span>
+        </div>
+    
+        <div class="form-group">
+            <input type="password" class="form-control item" ng-model = "Password" placeholder="Password" required>
+            <span class="error" ng-show="cusForm.Password.$dirty && cusForm.Password.$error.required">This is a required field</span>
+        </div>
+        
+        <div class="form-group">
+            <input class="btn btn-block create-account" type="submit" value="Update" ng-disabled="cusForm.$invalid"> 
+        </div>
+    </form>
+  </div>
+</div>

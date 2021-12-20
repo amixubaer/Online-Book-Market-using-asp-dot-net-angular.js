@@ -1,0 +1,31 @@
+<div ng-include="'views/inc/employee_nav.html'"></div>
+<div class="content">
+   
+  <h1>Order Details</h1>
+  
+      <table border="1" id="table">
+        <tr>
+          <th>Id</th>
+          <th>Order Id</th>
+          <th>Shop Name</th>
+          <th>Book Id</th>
+          <th>Book Name</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Status</th>
+        </tr>
+        <tr ng-repeat="o in EmployeeOrderDetail">
+            <td>{{o.Id}}</td>
+            <td>{{o.OrderId}}</td>
+            <td>{{o.ShopName}}</td>
+            <td>{{o.BookId}}</td>
+            <td>{{o.BookName}}</td>
+            <td>{{o.UnitPrice}}</td>
+            <td>{{o.Quantity}}</td>
+            <td>{{o.Status}}</td>
+        </tr>
+
+      </table>
+
+</div>
+  

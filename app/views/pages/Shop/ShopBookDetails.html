@@ -1,0 +1,26 @@
+<div ng-include="'views/inc/shop_nav.html'"></div>
+
+<div class="content">
+
+  <h1>Book Details</h1>
+ 
+  <table border="1" id="table">
+    <tr>
+      <th>Id</th>
+      <th>Book Title</th>
+      <th>Author</th>
+      <th>Publisher</th>
+      <th>Edition</th>
+      <th>Price</th>
+    </tr>
+
+    <tr>
+        <td>{{BookDetails.Id}}</td>
+        <td>{{BookDetails.Title}}</td>
+        <td>{{BookDetails.Author}}</td>
+        <td>{{BookDetails.Publisher}}</td>
+        <td>{{BookDetails.Edition}}</td>
+        <td>{{BookDetails.Price}}</td>
+    </tr>
+  </table>
+</div>

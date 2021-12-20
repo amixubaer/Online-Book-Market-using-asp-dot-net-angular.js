@@ -1,0 +1,36 @@
+<div ng-include="'views/inc/Admin_nav.html'"></div>
+
+<div class="content">
+
+  <div class="tblIncome">
+
+    <h1>All Statements</h1>
+
+    <div class="PDFDownload">
+      <input type="button" class="btn btn-success" value="Download" ng-click="Export()" />
+    </div>
+
+    <div class="input-group">
+      <input type="search" class="form-control rounded" placeholder="Search" ng-model = "search" aria-label="Search"
+      aria-describedby="search-addon" />
+    </div>
+
+      <table border="1" id="table">
+        <tr>
+          <th>Id</th>
+          <th>Date</th>
+          <th>Expenses</th>
+          <th>Amount</th>
+          
+        </tr>
+        <tr ng-repeat="i in IncomeStatement | filter:search">
+            <td>{{i.Id}}</td>
+            <td>{{i.Date}}</td>
+            <td>{{i.Expenditure}}</td>
+            <td>{{i.Amount}}</td>
+            
+        </tr>
+      </table>
+    </div>
+  </div>
+  

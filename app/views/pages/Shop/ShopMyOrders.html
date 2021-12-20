@@ -1,0 +1,36 @@
+<div ng-include="'views/inc/shop_nav.html'"></div>
+
+<div class="content">
+
+  <h1>Orders Report</h1>
+  
+  <div class="input-group">
+    <input type="search" class="form-control rounded" placeholder="Search" ng-model = "search" aria-label="Search"
+    aria-describedby="search-addon" />
+  </div>
+
+    <table border="1" id="table">
+      <tr>
+        <th>Id</th>
+        <th>Order Id</th>
+        <!-- <th>Customer Name</th> -->
+        <th>Book Name</th>
+        <th>Unit Price</th>
+        <th>Quantity</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+
+      <tr ng-repeat="p in MyOrders | filter:search" >
+          <td>{{p.Id}}</td>
+          <td>{{p.OrderId}}</td>
+          <td>{{p.BookName}}</td>
+          <td>{{p.UnitPrice}}</td>
+          <td>{{p.Quantity}}</td>
+          <td>{{p.Status}}</td>
+          <td>
+            <a style="color:white" class="btn btn-primary" href="#!/Shop/MyOrders/BookDetails/{{p.BookId}}">Book Details</a>
+          </td>
+      </tr>
+    </table>
+</div>

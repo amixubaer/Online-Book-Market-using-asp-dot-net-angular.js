@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" >
+  <head>
+    <!--<base href="/" />-->
+    <meta charset="utf-8">
+    <script src="app/lib/angular.min.js"></script>
+
+    <script src="app/lib/angular.route.min.js"></script>
+    <script src="app/app.js"></script>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.22/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+
+    <!-- My ads ############################################################################################### -->
+    <link rel = "stylesheet" type = "text/css" href = "content/project.css">
+    <link rel = "stylesheet" type = "text/css" href = "content/bootstrap.min.css">
+    <link rel = "stylesheet" type = "text/css" href = "content/reg-style.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+
+    <!-- My ads End ############################################################################################### -->
+
+    <title></title>
+  </head>
+  <body style="background-color: #dee9ff;" ng-app="myApp">
+    <!-- <div ng-include="'views/inc/top_nav.html'"></div> -->
+    <div ng-view> </div>
+  </body>
+</html>
+
+<!-- Add Services here -->
+<script src="app/services/ajax.js"></script>
+<script src="app/services/interCeptor.js"></script>
+
+
+<!-- Add Controllers here -->
+<script src="app/controllers/demo.js"></script>
+<script src="app/controllers/demo2.js"></script>
+<script src="app/controllers/products.js"></script>
+
+
+
+
+<!-- Ketabkhana -->
+<script src="app/controllers/Home.js"></script>
+<script src="app/controllers/AboutUs.js"></script>
+<script src="app/controllers/Contact.js"></script>
+<script src="app/controllers/Login.js"></script>
+<script src="app/controllers/Logout.js"></script>
+<script src="app/controllers/SignUp.js"></script>
+<script src="app/controllers/ShopRegistration.js"></script>
+<script src="app/controllers/CustomerRegistration.js"></script>
+
+<!-- Customer -->
+<script src="app/controllers/CustomerController/cus_home.js"></script>
+<script src="app/controllers/CustomerController/cus_AddCart.js"></script>
+
+<script src="app/controllers/CustomerController/cus_cart.js"></script>
+<script src="app/controllers/CustomerController/cus_PlusCart.js"></script>
+<script src="app/controllers/CustomerController/cus_MinusCart.js"></script>
+<script src="app/controllers/CustomerController/cus_DeleteCart.js"></script>
+<script src="app/controllers/CustomerController/cus_ClearCart.js"></script>
+<script src="app/controllers/CustomerController/cus_Checkout.js"></script>
+
+<script src="app/controllers/CustomerController/cus_MyOrders.js"></script>
+<script src="app/controllers/CustomerController/cus_MyCancelledOrders.js"></script>
+<script src="app/controllers/CustomerController/cus_OrderDetails.js"></script>
+<script src="app/controllers/CustomerController/cus_CancelReqOrder.js"></script>
+<script src="app/controllers/CustomerController/cus_MyTransactions.js"></script>
+<script src="app/controllers/CustomerController/cus_AddSupport.js"></script>
+
+<script src="app/controllers/CustomerController/cus_Profile.js"></script>
+<script src="app/controllers/CustomerController/cus_DeleteProfile.js"></script>
+
+
+
+
+<!-- Employee -->
+
+<script src="app/controllers/EmployeeController/EmployeeAllOrder.js"></script>
+<script src="app/controllers/EmployeeController/EmployeeOrderDetail.js"></script>
+<script src="app/controllers/EmployeeController/EmployeeCancelRequest.js"></script>
+<script src="app/controllers/EmployeeController/EmployeeCancelAccept.js"></script>
+<script src="app/controllers/EmployeeController/EmployeeCancelDecline.js"></script>
+<script src="app/controllers/EmployeeController/EmployeeCanceledOrder.js"></script>
+<script src="app/controllers/EmployeeController/EmployeeAddSalary.js"></script>
+<script src="app/controllers/EmployeeController/EmployeeApprovedSalary.js"></script>
+<script src="app/controllers/EmployeeController/EmployeeAddStatement.js"></script>
+<script src="app/controllers/EmployeeController/EmployeeShowStatement.js"></script>
+<script src="app/controllers/EmployeeController/EmployeeAddTransaction.js"></script>
+<script src="app/controllers/EmployeeController/EmployeeShowTransaction.js"></script>
+<script src="app/controllers/EmployeeController/EmployeeAddSupport.js"></script>
+<script src="app/controllers/EmployeeController/EmployeeProfile.js"></script>
+<script src="app/controllers/EmployeeController/EmployeeDeleteProfile.js"></script>
+
+
+
+<!-- Shop -->
+<script src="app/controllers/ShopController/ShopHome.js"></script>
+<script src="app/controllers/ShopController/ShopMyBooks.js"></script>
+<script src="app/controllers/ShopController/ShopAddBook.js"></script>
+<script src="app/controllers/ShopController/ShopBookEdit.js"></script>
+<script src="app/controllers/ShopController/ShopBookDelete.js"></script>
+<script src="app/controllers/ShopController/ShopMyOrders.js"></script>
+<script src="app/controllers/ShopController/ShopBookDetails.js"></script>
+<script src="app/controllers/ShopController/ShopShowTransactions.js"></script>
+<script src="app/controllers/ShopController/ShopAddSupport.js"></script>
+<script src="app/controllers/ShopController/ShopProfile.js"></script>
+<script src="app/controllers/ShopController/ShopProfileDelete.js"></script>
+
+
+<!------- ADMIN ------->
+<script src="app/controllers/AdminController/AdminHome.js"></script>
+<!--admin-->
+<script src="app/controllers/AdminController/AdminAllAdmins.js"></script>
+<script src="app/controllers/AdminController/AdminAddAdmin.js"></script>
+<script src="app/controllers/AdminController/UpdateAdmin.js"></script>
+<script src="app/controllers/AdminController/DeleteAdmin.js"></script>
+<!--employee-->
+<script src="app/controllers/AdminController/AdminAllEmployees.js"></script>
+<script src="app/controllers/AdminController/AdminAddEmployee.js"></script>
+<script src="app/controllers/AdminController/UpdateEmployee.js"></script>
+<script src="app/controllers/AdminController/DeleteEmployee.js"></script>
+<!--shop-->
+<script src="app/controllers/AdminController/AdminAllShops.js"></script>
+<script src="app/controllers/AdminController/UpdateShop.js"></script>
+<script src="app/controllers/AdminController/DeleteShop.js"></script>
+<script src="app/controllers/AdminController/AdminApprovedShopList.js"></script>
+<script src="app/controllers/AdminController/AdminPendingShops.js"></script>
+<script src="app/controllers/AdminController/AdminApproveShops.js"></script>
+<script src="app/controllers/AdminController/AdminDeclineShops.js"></script>
+<!--customer-->
+<script src="app/controllers/AdminController/AdminAllCustomers.js"></script>
+<script src="app/controllers/AdminController/UpdateCustomer.js"></script>
+<script src="app/controllers/AdminController/DeleteCustomer.js"></script>
+<!--salary-->
+<script src="app/controllers/AdminController/AdminAllSalary.js"></script>
+<script src="app/controllers/AdminController/AdminPendingSalary.js"></script>
+<script src="app/controllers/AdminController/AdminApproveSalary.js"></script>
+<script src="app/controllers/AdminController/AdminDeclineSalary.js"></script>
+<!--order-->
+<script src="app/controllers/AdminController/AdminAllOrders.js"></script>
+<script src="app/controllers/AdminController/AdminOrderDetail.js"></script>
+<!--transaction history-->
+<script src="app/controllers/AdminController/AdminAllTransactions.js"></script>
+<!--income statement-->
+<script src="app/controllers/AdminController/AdminIncomeStatement.js"></script>
+<!--support-->
+<script src="app/controllers/AdminController/AdminSupport.js"></script>
+<!--admin profile-->
+<script src="app/controllers/AdminController/AdminProfile.js"></script>
+<script src="app/controllers/AdminController/AdminDeleteProfile.js"></script>

@@ -1,0 +1,29 @@
+<div ng-include="'views/inc/customer_nav.html'"></div>
+<div class="content">
+
+  <div class="transactions">
+    <h1>Orders</h1>
+
+    <div class="PDFDownload">
+      <input type="button" class="btn btn-success" value="Download" ng-click="Export()" />
+   </div>
+  <br>
+    <table border="1" id="table">
+      <tr>
+        <th>Id</th>
+        <th>Amount</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+      <tr ng-repeat="p in MyOrders">
+          <td>{{p.Id}}</td>
+          <td>{{p.Amount}}</td>
+          <td>{{p.Status}}</td>
+          <td>
+            <a style="color:white" class="btn btn-primary"  href="#!Customer/MyOrders/Details/{{p.Id}}">Detail</a>
+            <a style="color:white" class="btn btn-danger" href="#!Customer/MyOrders/Cancel/{{p.Id}}">Request for Cancel</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

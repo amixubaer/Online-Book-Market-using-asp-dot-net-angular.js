@@ -1,0 +1,39 @@
+<div ng-include="'views/inc/shop_nav.html'"></div>
+
+<div class="content">
+
+  <h1>Are you sure want to delete the book?</h1>
+
+  <div class="registration-form" ng-submit = "submit()">
+    <form>
+      <div class="form-group">
+        <input type="text" class="form-control item" ng-model = "Title" placeholder="Title" disabled>
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control item" ng-model = "Author" placeholder="Author" disabled>
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control item" ng-model = "Publisher" placeholder="Publisher" disabled>
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control item" ng-model = "Edition" placeholder="Edition" disabled>
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control item" ng-model = "Price" placeholder="Price" disabled>
+      </div>
+      
+      <div class="form-group">
+        <input type="text" class="form-control item"  ng-model = "Quantity" placeholder="Quantity"disabled>
+      </div>
+
+
+      <div class="form-group">
+        <input class="btn btn-block create-account" type="submit" value="Delete"> 
+      </div>
+      
+  </form>
+</div>

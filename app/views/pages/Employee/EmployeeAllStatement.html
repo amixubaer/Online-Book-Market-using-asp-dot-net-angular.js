@@ -1,0 +1,42 @@
+<div ng-include="'views/inc/employee_nav.html'"></div>
+<div class="content">
+ 
+
+  <a class="btn btn-primary" href="#!Employee/AddStatement">Add Statement</a>
+  <br><br>
+
+<div class="PDFDownload">
+  <input type="button" class="btn btn-success" value="Download" ng-click="Export()" />
+</div>
+
+
+  <div class="tblCustomers">
+
+    <h1>Income Statement</h1>
+    
+    
+
+    <div class="input-group">
+      <input type="search" class="form-control rounded" placeholder="Search" ng-model = "search" aria-label="Search"
+      aria-describedby="search-addon" />
+    </div>
+
+
+    <table border="1" id="table">
+      <tr>
+        <th>Id</th>
+        <th>Date</th>
+        <th>Expenditure</th>
+        <th>Amount</th>
+      </tr>
+      <tr ng-repeat="s in Statements | filter:search">
+          <td>{{s.Id}}</td>
+          <td>{{s.Date}}</td>
+          <td>{{s.Expenditure}}</td>
+          <td>{{s.Amount}}</td>
+      </tr>
+    </table>
+
+  </div>
+
+</div>

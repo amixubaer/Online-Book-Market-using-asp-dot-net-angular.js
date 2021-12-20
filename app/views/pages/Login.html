@@ -1,0 +1,37 @@
+
+<div ng-include="'views/inc/general_nav.html'"></div>
+<div class="content">
+    
+    <h1>Login</h1>
+
+    <style>
+    input.ng-invalid.ng-dirty { background-color: lightpink; }
+    input.ng-valid { background-color: lightgreen; }
+    span.error { color: red; font-weight: bold; }
+    </style>
+    
+      <div class="registration-form" ng-submit = "login()">
+        <form name="supportForm" novalidate>
+            <div class="form-icon">
+                <span><i class="icon icon-user"></i></span>
+            </div>
+    
+            <div class="form-group" >
+                <input type="text" class="form-control item" ng-model = "data.Username" placeholder="Username" required>
+                <span class="error" ng-show="supportForm.data.Username.$dirty && supportForm.data.Username.$error.required && "></span>
+            </div>
+    
+            <div class="form-group">
+                <input type="password" class="form-control item" ng-model = "data.Password" placeholder="Password" required>
+                <span class="error" ng-show="supportForm.data.Password.$dirty && supportForm.data.Password.$error.required"></span>
+            </div>
+
+            <span class="text-danger">{{invalid}}</span>
+    
+            <div class="form-group">
+              <input class="btn btn-block create-account" type="submit" value="Login" ng-disabled="supportForm.$invalid"> 
+            </div>
+            <a href="#!/Ketabkhana/SignUp"> Not yet registered?</a>
+        </form>
+    </div>
+    

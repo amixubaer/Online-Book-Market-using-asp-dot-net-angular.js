@@ -1,0 +1,16 @@
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BEL\bin\Debug\BEL.dll
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BEL\bin\Debug\BEL.pdb
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BEL\obj\Debug\BEL.csproj.AssemblyReference.cache
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BEL\obj\Debug\BEL.csproj.CoreCompileInputs.cache
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BEL\obj\Debug\BEL.dll
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BEL\obj\Debug\BEL.pdb
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BEL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BEL\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BEL\bin\Debug\System.Web.Cors.dll
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BEL\bin\Debug\System.Web.Http.Cors.dll
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BEL\bin\Debug\System.Web.Http.dll
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BEL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BEL\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BEL\bin\Debug\System.Web.Http.xml
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BEL\bin\Debug\System.Web.Http.Cors.xml
+C:\Users\Arosh\Desktop\C#\Final\ApiApp\BEL\obj\Debug\BEL.csproj.CopyComplete

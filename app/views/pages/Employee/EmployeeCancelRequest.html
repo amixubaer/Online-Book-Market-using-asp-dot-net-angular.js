@@ -1,0 +1,30 @@
+<div ng-include="'views/inc/employee_nav.html'"></div>
+<div class="content">
+  <h1>Cancel Request</h1>
+
+  <div class="input-group">
+    <input type="search" class="form-control rounded" placeholder="Search" ng-model = "search" aria-label="Search"
+    aria-describedby="search-addon" />
+  </div>
+
+
+    <table border="1" id="table">
+      <tr>
+        <th>Id</th>
+        <th>Customer Name</th>
+        <th>Amount</th>
+        <th>Action</th>
+      </tr>
+      <tr ng-repeat="o in EmployeeCancelRequest | filter:search">
+          <td>{{o.Id}}</td>
+          <td>{{o.CustomerName}}</td>
+          <td>{{o.Amount}}</td>
+          <td>
+              <a class="btn btn-success" href="#!Employee/AcceptOrder/{{o.Id}}">Accept</a>
+              <a class="btn btn-danger" href="#!Employee/DeclineOrder/{{o.Id}}">Decline</a>
+         </td>
+      </tr>
+
+    </table>
+
+</div>
